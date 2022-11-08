@@ -1,0 +1,15 @@
+{
+  "name": "BrowserSyncHelper",
+  "version": "0.0.3",
+  "manifest_version": 2,
+  "description": "Add browser sync code to localhost",
+  "homepage_url": "http://localtest.me",
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_title": "Browser Sync!"
+  },
+  "permissions": ["https://localhost/*", "http://localhost/*", "activeTab"]
+}
